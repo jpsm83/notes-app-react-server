@@ -40,8 +40,6 @@ router.post("/", (req, res, next) => {
     dueDate,
     title,
     description,
-    priority,
-    done,
     user: req.user.id,
   })
     .then((note) => {

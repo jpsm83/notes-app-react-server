@@ -1,4 +1,4 @@
-// .populate in recipes.routes are causing error in the front end
+// .populate in notes.routes are causing error in the front end
 // Objects are not valid as a React child
 // .populate in auth.routes are working fine
 // why??? only god knows...
