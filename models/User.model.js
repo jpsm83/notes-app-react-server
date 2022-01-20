@@ -19,7 +19,7 @@ const userSchema = new Schema(
     photo: {
       type: String,
       default:
-        "./img/avatar.jpg",
+        "https://www.pinclipart.com/picdir/middle/38-388919_computer-icons-user-profile-clip-art-avatar-user.png",
       maxlength: 300,
     },
     myNotes: [

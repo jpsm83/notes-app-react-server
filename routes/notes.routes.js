@@ -40,7 +40,7 @@ router.post("/", (req, res, next) => {
     dueDate,
     title,
     description,
-    user: req.user.id,
+    username: req.user.id,
   })
     .then((note) => {
       const userId = req.user.id;

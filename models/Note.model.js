@@ -25,7 +25,7 @@ const noteSchema = new Schema(
     done: {
       type: Boolean, default: false
     },
-    user: {
+    username: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "User",
     },
