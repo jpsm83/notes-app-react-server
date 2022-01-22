@@ -11,7 +11,6 @@ module.exports = (app) => {
       credentials: true,
       origin: [
         process.env.PUBLIC_DOMAIN,
-        "Access-Control-Allow-Origin",
         // must setup coors to alow your production webpage to acess information
         "https://notes-app-react-server.vercel.app"
       ],
