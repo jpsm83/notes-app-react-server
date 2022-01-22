@@ -87,7 +87,7 @@ router.post("/login", (req, res, next) => {
 
       // in this case, "myRecipes" props in the user model refers to "Recipe" model
       // where you will find the second parameter "dishName"
-      theUser.populate("myRecipes", "dishName")
+      theUser.populate("myNotes", "title")
 
       return res.status(200).json(theUser);
     });
