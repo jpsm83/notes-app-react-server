@@ -13,7 +13,7 @@ module.exports = (app) => {
         process.env.PUBLIC_DOMAIN,
         // must setup coors to alow your production webpage to acess information
         "https://notes-app-react-server.vercel.app",
-        "https://notes-todo-react-app.herokuapp.com/",
+        "https://notes-todo-react-app.herokuapp.com",
       ],
     })
   );
