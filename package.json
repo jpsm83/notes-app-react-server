@@ -15,7 +15,7 @@
   "keywords": [],
   "author": "Joao P S Machado",
   "license": "ISC",
-  "homepage": "",
+  "homepage": "https://notes-app-react-server.vercel.app",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
