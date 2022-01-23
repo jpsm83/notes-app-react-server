@@ -96,7 +96,7 @@ Filter by name, cousine or ingredients.
   - auth.login(user)
   - auth.signup(user)
   - auth.logout()
-  - auth.isLoggedIn(user)
+  - auth.isLoggedin(user)
   - auth.edit(user)
 - Recipes Service
   - recipes.create(data)
