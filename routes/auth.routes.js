@@ -3,7 +3,6 @@
 // .populate in auth.routes are working fine
 // why??? only god knows...
 
-
 // authentication routes for User.model - login, signup, logout, edit, loggedin
 
 const express = require("express");
@@ -13,7 +12,7 @@ const User = require("../models/User.model");
 
 // Bcrypt config to encrypt passwords
 const bcrypt = require("bcryptjs");
-const uploader = require("../configs/cloudinary.config");
+// const uploader = require("../configs/cloudinary.config");
 const bcryptSalt = 10;
 
 router.post("/signup", (req, res, next) => {
@@ -87,7 +86,7 @@ router.post("/login", (req, res, next) => {
 
       // in this case, "myRecipes" props in the user model refers to "Recipe" model
       // where you will find the second parameter "dishName"
-      theUser.populate("myNotes", "title")
+      theUser.populate("myNotes", "title");
 
       return res.status(200).json(theUser);
     });
@@ -107,7 +106,8 @@ router.post("/logout", (req, res, next) => {
 });
 
 // cloudnary router for upload photo???
-router.put("/edit-user", uploader.single("photo"), (req, res, next) => {
+// router.put("/edit-user", uploader.single("photo"), (req, res, next) => {
+router.put("/edit-user", (req, res, next) => {
   const { username, email, password, photo } = req.body;
   // validators have to be equal to validators from frontend
   if (password.length < 5) {
